@@ -1,0 +1,36 @@
+.filter_list {
+    
+    background-color: var(--background_menu);
+    color: #ccc9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+    cursor: pointer;
+    position: fixed;
+    margin-top: 0.5rem;
+    transform: translateX(2000px);
+    transition: transform scaleX 0.5s;
+    
+}
+
+.hide_menu_filter {
+    background-color: var(--background_menu);
+    color: #ccc9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+    cursor: pointer;
+    position: fixed;
+    margin-top: 0.5rem;
+    transform: translateX(0);
+    transition: transform scaleX 0.5s;
+    
+}
+
+.menu_filter:hover {
+    transform: scaleX(1.02);
+    background-color: rgba(173, 111, 111, 80%);
+
+}

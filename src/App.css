@@ -1,0 +1,208 @@
+body {
+    background-color: var(--background_body);
+    
+}
+
+.App {
+    max-width: 1224px;
+    margin-left: auto;
+    margin-right: auto;
+    scroll-behavior: smooth;
+}
+
+.bg_img-header {
+    background-image: url(./images/headerRickandMorty.jpg);
+    width: 100%;
+    max-width: 1224px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 20px;
+    color: var(--background_body);
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1000;
+}
+
+.cards_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+        
+}
+
+.location_info {
+    height: 250px;
+    background-color: var(--background_suggestedList);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 2rem;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.location_info span {
+    color: #ccc9;
+    
+    
+}
+
+.location_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 20px;
+    
+}
+
+.item_list1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.item_list2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.item_list3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.nav {
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1224px;
+    margin: auto;
+    height: 70px;
+    background-color: rgb(197, 144, 144);
+    box-shadow: 0px 0px 10px 0px;
+    position: fixed;
+    top: 300px;
+    padding-left: 10px;
+    z-index: 1100;
+}
+
+.visual_contain {
+    padding-top: 370px;
+}
+
+.input {
+    height: 30px;
+    width: 400px;
+    border: none;
+    /* border-radius: 10px 0px 0px 10px; */
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 0.3rem;
+    transition: transform 0.5s;
+}
+
+.input:hover {
+    border: rgb(85, 84, 84) solid 1px;
+    transform: scale(1.02);
+    border-color: rgba(70, 209, 133, 0.911);
+         
+}
+
+.search_button {
+    height: 30px;
+    width: 200px;
+    background-color: bisque;
+    box-shadow: 0px 2px 5px 0px black;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0px 3px 10px 0px;
+    cursor: pointer;
+    /* border-radius:  0px 10px 10px 0px; */
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.search_button:hover {
+    transform: scale(1.03);
+    background-color: rgba(100, 255, 170, 0.911);
+}
+
+.err {
+    position: fixed;
+    margin-top: 400px;
+    padding-left: 20px;
+    color: red;
+    font-size: 30px;
+}
+
+@media (min-width: 700px) {
+    .nav {
+        height: 50px;
+        justify-content: center;
+        align-items: flex-end;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+
+    .input {
+        
+        border-radius: 10px 0px 0px 10px;
+        
+    }
+
+    .search_button {
+        
+        border-radius:  0px 10px 10px 0px;
+        
+    }
+
+    .visual_contain {
+        padding-top: 350px;
+    }
+
+    .bg_img-header {
+        justify-content: center;
+        align-items: center;
+        background-position: 0px -60px;
+        font-size: 30px;
+    }
+
+    .location_info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8rem;
+        padding: 20px;
+        height: 150px;
+    }
+
+    .location_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8rem;
+        
+        
+    }
+
+    
+}
