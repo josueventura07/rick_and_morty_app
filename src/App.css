@@ -4,7 +4,7 @@ body {
 }
 
 .App {
-    max-width: 1224px;
+    max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
     scroll-behavior: smooth;
@@ -13,7 +13,7 @@ body {
 .bg_img-header {
     background-image: url('https://imgix.bustle.com/inverse/5d/09/a0/17/caa2/4f26/9cc7/43cce806ffd0/what-do-you-mean-youre-not-rated-for-this-morty.png?w=710&h=378&fit=max&auto=format%2Ccompress&q=50&dpr=2');
     width: 100%;
-    max-width: 1224px;
+    max-width: 1024px;
     height: 100px;
     display: flex;
     justify-content: center;
@@ -91,7 +91,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 1224px;
+    max-width: 1024px;
     height: 70px;
     background-color: rgb(197, 144, 144);
     box-shadow: 0px 0px 10px 0px;
@@ -158,7 +158,7 @@ body {
         align-items: flex-end;
         padding-left: 10px;
         padding-right: 10px;
-        top: 300px;
+        top: 200px;
     }
 
     .input {
@@ -174,11 +174,11 @@ body {
     }
 
     .visual_contain {
-        padding-top: 350px;
+        padding-top: 250px;
     }
 
     .bg_img-header {
-        height: 300px;
+        height: 200px;
         justify-content: center;
         align-items: center;
         background-position: 0px -100px;
@@ -192,7 +192,7 @@ body {
         align-items: center;
         gap: 8rem;
         padding: 20px;
-        height: 150px;
+        height: 100px;
     }
 
     .location_list {
