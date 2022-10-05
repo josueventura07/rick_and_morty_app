@@ -70,7 +70,8 @@
     font-weight: 500;
     font-size: 23px;
     margin-bottom: 1rem;
-    color: #F96666;
+    color: rgb(218, 98, 0);
+    -webkit-text-stroke: 0.1px rgb(57, 228, 171);
 }
 
 .card_list {
