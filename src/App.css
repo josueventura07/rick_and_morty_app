@@ -30,6 +30,26 @@ body {
     z-index: 1000;
 }
 
+.bg_img-header h1 {
+    animation-name: move;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
+
+@keyframes move {
+   0%{
+        transform: translateY(0);
+   } 100%{
+    transform: translateY(50%) translateX(20%) scale(1.1);
+    color: rgb(109, 236, 236);
+    text-shadow: 10px 20px 10px 1px black;
+
+   } 
+}
+
 .cards_container {
     width: 100%;
     display: grid;
