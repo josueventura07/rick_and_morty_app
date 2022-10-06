@@ -43,7 +43,7 @@ body {
    0%{
         transform: translateY(0);
    } 100%{
-    transform: translateY(50%) translateX(20%) scale(1.1);
+    transform: translateY(20%) translateX(5%) scale(1.1);
     color: rgb(109, 236, 236);
     text-shadow: 10px 20px 10px 1px black;
 
