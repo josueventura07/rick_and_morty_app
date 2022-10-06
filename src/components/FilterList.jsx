@@ -6,6 +6,7 @@ const FilterList = ({suggestedList, setSearchInput}) => {
   const [toggle, setToggle] = useState(false)   
 
 
+
 const handleClick = id => setSearchInput(id)
 
 

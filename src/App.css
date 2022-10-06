@@ -14,7 +14,7 @@ body {
     background-image: url('https://imgix.bustle.com/inverse/5d/09/a0/17/caa2/4f26/9cc7/43cce806ffd0/what-do-you-mean-youre-not-rated-for-this-morty.png?w=710&h=378&fit=max&auto=format%2Ccompress&q=50&dpr=2');
     width: 100%;
     max-width: 1024px;
-    height: 100px;
+    height: 170px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -116,8 +116,7 @@ body {
     width: 100%;
     max-width: 1024px;
     height: 70px;
-    background-color: rgb(197, 144, 144);
-    box-shadow: 0px 0px 10px 0px;
+    background-color: transparent;
     position: fixed;
     top: 100px;
     padding-left: 10px;
@@ -139,13 +138,22 @@ body {
     text-align: center;
     margin-bottom: 0.3rem;
     transition: transform 0.5s;
+    background-color: transparent;
+    border: rgba(253, 85, 7, 75%) solid 2px;
+    
+}
+
+.input::placeholder { 
+    color: rgba(253, 85, 7);
+    -webkit-text-stroke: 0.9px var(--background_body);
+    font-weight: bold; 
 }
 
 .input:hover {
     border: rgb(85, 84, 84) solid 1px;
     transform: scale(1.02);
     border-color: rgba(70, 209, 133, 0.911);
-         
+    background-color: rgba(255, 255, 244, 75%);        
 }
 
 .search_button {
@@ -157,6 +165,7 @@ body {
     font-weight: bold;
     text-shadow: 0px 3px 10px 0px;
     cursor: pointer;
+    margin-left: 85px;
     /* border-radius:  0px 10px 10px 0px; */
     border-radius: 10px;
     transition: transform 0.5s;
@@ -183,17 +192,27 @@ body {
         padding-left: 10px;
         padding-right: 10px;
         top: 200px;
+        background-color: rgb(197, 144, 144);
+        box-shadow: 0px 0px 10px 0px;
     }
 
     
     .input {
         
         border-radius: 10px 0px 0px 10px;
-        
+        background-color: white;
+        border: none;
     }
 
+    .input::placeholder { 
+        color: grey;
+        -webkit-text-stroke: 0;
+        font-weight: 0; 
+    }
+    
+
     .search_button {
-        
+        margin-left: 0;
         border-radius:  0px 10px 10px 0px;
         
     }
