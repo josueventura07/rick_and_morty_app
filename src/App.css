@@ -36,18 +36,20 @@ body {
     animation-direction: alternate-reverse;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
-    
+    transition: all 5s ease-in-out;
 }
 
 @keyframes move {
    0%{
         transform: translateY(0);
+        transition: all 5s ease-in-out;
    } 100%{
     transform: translateY(20%) translateX(5%) scale(1.1);
     color: rgb(109, 236, 236);
     text-shadow: 10px 20px 10px 1px black;
-
-   } 
+    transition: all 5s ease-in-out; 
+   }
+    
 }
 
 .cards_container {
@@ -121,6 +123,7 @@ body {
     top: 100px;
     padding-left: 10px;
     z-index: 1100;
+    
 }
 
 .visual_contain {
@@ -137,10 +140,10 @@ body {
     font-size: 16px;
     text-align: center;
     margin-bottom: 0.3rem;
-    transition: transform 0.5s;
-    background-color: transparent;
+    background-color: white;
     border: rgba(253, 85, 7, 75%) solid 2px;
-    
+    transition: all 5s ease;
+    z-index: 1;
 }
 
 .input::placeholder { 
@@ -151,16 +154,16 @@ body {
 
 .input:hover {
     border: rgb(85, 84, 84) solid 1px;
-    transform: scale(1.02);
     border-color: rgba(70, 209, 133, 0.911);
-    background-color: rgba(255, 255, 244, 75%);        
+    background-color: rgba(255, 255, 244, 75%); 
+    transition: all 5s ease;       
 }
 
 .search_button {
     height: 30px;
     width: 200px;
     background-color: bisque;
-    box-shadow: 0px 2px 5px 0px black;
+    box-shadow: -1px 1px 2px black;
     font-size: 20px;
     font-weight: bold;
     text-shadow: 0px 3px 10px 0px;
@@ -168,12 +171,14 @@ body {
     margin-left: 85px;
     /* border-radius:  0px 10px 10px 0px; */
     border-radius: 10px;
-    transition: transform 0.5s;
+    transition: all 0.5s ease;
+    z-index: 2;
 }
 
 .search_button:hover {
-    transform: scale(1.03);
+    transform: scale(1.01);
     background-color: rgba(100, 255, 170, 0.911);
+    transition: all 0.5s ease;
 }
 
 .err {
@@ -249,5 +254,10 @@ body {
         
     }
 
+    form {
+        display: flex;
+        
+    }
     
 }
+

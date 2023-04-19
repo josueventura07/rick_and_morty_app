@@ -8,13 +8,14 @@
     padding: 0.5rem;
     cursor: pointer;
     position: fixed;
-    margin-top: 0.5rem;
+    margin-top: 0rem;
     transform: translateX(2000px);
-    transition: transform scaleX 0.5s;
+    transition: transform scaleX 5s ease;
     
 }
 
 .hide_menu_filter {
+    width: 300px;
     background-color: var(--background_menu);
     color: #ccc9;
     display: flex;
@@ -23,9 +24,9 @@
     padding: 0.5rem;
     cursor: pointer;
     position: fixed;
-    margin-top: 0.5rem;
+    margin-top: -4px;
     transform: translateX(0);
-    transition: transform scaleX 0.5s;
+    transition: transform scaleX 5s ease;
     
 }
 

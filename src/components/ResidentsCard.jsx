@@ -15,7 +15,7 @@ axios.get(url)
 
 }, [])
 
-console.log(resident)
+
 
   return (
     <article className='card'>
