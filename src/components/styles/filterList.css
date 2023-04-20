@@ -49,6 +49,14 @@
 
 }
 
+@media  (min-width: 600px) {
+    
+    .hide_menu_filter {
+       right: 40%; 
+    }
+
+}
+
 @media  (min-width: 400px) {
     
     .hide_menu_filter {
@@ -56,3 +64,31 @@
     }
 
 }
+
+@media  (min-width: 1400px) {
+    
+    .hide_menu_filter {
+       top: 40px;
+       right: 20%; 
+    }
+
+}
+
+@media screen and  (min-width: 1000px) and (max-width: 1400px) {
+    
+    .hide_menu_filter {
+       top: 40px;
+       right: 20%; 
+    }
+
+}
+
+@media screen and  (min-width: 800px) and (max-width: 1000px) {
+    
+    .hide_menu_filter {
+       top: 40px;
+       right: 20%; 
+    }
+
+}
+

@@ -150,7 +150,7 @@ form {
     font-size: 16px;
     text-align: center;
     background-color: white;
-    transition: all 5s ease;
+    transition: all 1s ease;
     z-index: 1;
 }
 
@@ -164,7 +164,7 @@ form {
     border: rgb(85, 84, 84) solid 1px;
     border-color: rgba(70, 209, 133, 0.911);
     background-color: rgba(255, 255, 244, 75%); 
-    transition: all 5s ease;       
+    transition: all 1s ease;       
 }
 
 .search_button {
@@ -178,14 +178,14 @@ form {
     cursor: pointer;
     margin-left: 0px;
     border-radius:  0px 10px 10px 0px;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
     z-index: 2;
 }
 
 .search_button:hover {
     transform: scale(1.01);
     background-color: rgba(100, 255, 170, 0.911);
-    transition: all 0.5s ease;
+    transition: all 1s ease;
 }
 
 .err {
