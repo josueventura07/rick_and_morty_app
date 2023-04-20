@@ -1,5 +1,4 @@
 .filter_list {
-    
     background-color: var(--background_menu);
     color: #ccc9;
     display: flex;
@@ -11,7 +10,6 @@
     margin-top: 0rem;
     transform: translateX(2000px);
     transition: transform scaleX 5s ease;
-    
 }
 
 .hide_menu_filter {
@@ -24,14 +22,13 @@
     padding: 0.5rem;
     cursor: pointer;
     position: fixed;
-    margin-top: -4px;
+    margin-top: 30px;
+    margin-left: 10px;
     transform: translateX(0);
     transition: transform scaleX 5s ease;
-    
 }
 
 .menu_filter:hover {
     transform: scaleX(1.02);
     background-color: rgba(173, 111, 111, 80%);
-
 }
