@@ -12,7 +12,7 @@ const handleClick = id => {
 
 
   return (
-    <ul className={lookInputSearch ? 'filter_list' : 'hide_menu_filter'}>
+    <ul id='list'  className={lookInputSearch ? 'filter_list' : 'hide_menu_filter'}>
         {  
         suggestedList?.map(location => (
             <li className='menu_filter' onClick={() => handleClick(location.id)} key={location.id}>{location.name}</li>
@@ -20,8 +20,11 @@ const handleClick = id => {
        
         }
     </ul> 
+   
   )
   
 }
-
+ 
+ 
+ 
 export default FilterList

@@ -16,21 +16,22 @@
 }
 
 .hide_menu_filter {
+    height: 250px;
+    width: 100%;
     max-width: 250px;
     background-color: var(--background_menu);
     color: #ccc9;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 0.5rem;
     cursor: pointer;
     position: absolute;
-    top: 25px;
-    right: 30%;
+    top: 30px;
+    right: 0;
     transform: translateX(0);
     transition: transform scaleX 5s ease;
-    
+    overflow-y: scroll;
+    border-radius: 0px 0px 5px 5px;
 }
+
 
 .menu_filter:hover {
     transform: scaleX(1.02);
@@ -39,56 +40,4 @@
 }
 
 
-
-@media  (min-width: 700px) {
-    
-    .hide_menu_filter {
-       top: 40px;
-       right: 10%; 
-    }
-
-}
-
-@media  (min-width: 600px) {
-    
-    .hide_menu_filter {
-       right: 40%; 
-    }
-
-}
-
-@media  (min-width: 400px) {
-    
-    .hide_menu_filter {
-       right: 35%; 
-    }
-
-}
-
-@media  (min-width: 1400px) {
-    
-    .hide_menu_filter {
-       top: 40px;
-       right: 20%; 
-    }
-
-}
-
-@media screen and  (min-width: 1000px) and (max-width: 1400px) {
-    
-    .hide_menu_filter {
-       top: 40px;
-       right: 20%; 
-    }
-
-}
-
-@media screen and  (min-width: 800px) and (max-width: 1000px) {
-    
-    .hide_menu_filter {
-       top: 40px;
-       right: 20%; 
-    }
-
-}
 

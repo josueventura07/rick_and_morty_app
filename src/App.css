@@ -130,7 +130,7 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    
     
 }
 
@@ -139,11 +139,17 @@ form {
     
 }
 
-.input {
-    height: 25px;
+.inputSearch_form_container {
+    height: 30px;
     min-width: 250px;
     width: 100%;
     max-width: 250px;
+    position: relative;
+}
+
+.input {
+    height: 100%;
+    width: 100%;
     border: none;
     border: rgba(253, 85, 7, 75%) solid 1px;
     border-radius: 10px 0px 0px 10px; 
@@ -168,6 +174,7 @@ form {
 }
 
 .search_button {
+    height: 30px;
     width: 120px;
     min-width: 110px;
     background-color: bisque;

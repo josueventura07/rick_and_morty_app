@@ -65,20 +65,22 @@ const handleSubmit = event => {
       </div>
      <div className='nav'>
      <form onSubmit={handleSubmit}>
+        <div className='inputSearch_form_container'>
         <input className='input'
           id='idLocation'
           placeholder='Enter number from 1 to 126' type="text"
           onChange={handleChange}
-          
         />
-        <button className='search_button'>Search</button>
-          <FilterList 
+         <FilterList 
           suggestedList={suggestedList}
           setSearchInput={setSearchInput}
           searchInput={searchInput}
           setLookInputSearch={setLookInputSearch}
           lookInputSearch={lookInputSearch}
          />
+        </div>
+        <button className='search_button'>Search</button>
+         
 
       </form>
      </div>
