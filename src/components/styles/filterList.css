@@ -1,10 +1,8 @@
 .filter_list {
-    
     background-color: var(--background_menu);
     color: #ccc9;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding: 0.5rem;
     cursor: pointer;
     position: absolute;
@@ -18,8 +16,8 @@
 .hide_menu_filter {
     height: 250px;
     width: 100%;
-    max-width: 250px;
-    background-color: var(--background_menu);
+    max-width: 240px;
+    background-color: var(--background_transparent);
     color: #ccc9;
     padding: 0.5rem;
     cursor: pointer;
@@ -30,8 +28,18 @@
     transition: transform scaleX 5s ease;
     overflow-y: scroll;
     border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 3px 8px #000;
 }
 
+.hide_menu_filter::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--background_menu);
+}
+
+.hide_menu_filter::-webkit-scrollbar-thumb {
+    background-color: rgba(173, 111, 111, 80%);
+    border-radius: 5px;
+}
 
 .menu_filter:hover {
     transform: scaleX(1.02);

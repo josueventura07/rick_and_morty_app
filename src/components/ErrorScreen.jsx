@@ -4,7 +4,7 @@ const ErrorScreen = () => {
 
 
   return (
-    <h2 className='err'>This Location is Not Found</h2>
+    <h2 className='err'>This Location was Not Found</h2>
   )
 }
 
